@@ -6,6 +6,7 @@ $serverTime = date('Y-m-d H:i:s');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
      {
+        // send data of type POST
     $name = $_POST['name'] ?? '';
     $color = $_POST['color'] ?? '';
 
@@ -26,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
 <body>
     <h1>Current Server Time: <?= htmlspecialchars($serverTime) ?></h1>
 
-    <!-- use post becuse  i do not want show information in title
+    <!-- use post becuse personal data and i do not want show information in title 
     -->
     <form action="" method="POST">
         <label>
